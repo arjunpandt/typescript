@@ -1,0 +1,99 @@
+* {
+  margin-left: 0;
+}
+header,
+footer {
+  text-align: center;
+}
+footer {
+  background-color: #f3eeee;
+  position: fixed;
+  padding: 1px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* table styling */
+table {
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: rgb(228, 228, 228);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(245, 245, 245);
+}
+.table {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.githubProfilePic {
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 5px;
+  height: 25px;
+  width: 20rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  width: 20rem;
+  height: 2rem;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.loader::before {
+  content: "";
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

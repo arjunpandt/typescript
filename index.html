@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NashTech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader" class="loader"></div>
+    <header>
+      <nav>
+        <h1 style="font-size: 50px">Web Development Basics</h1>
+        <p>
+          GitHub profile pictures are <strong>clickable</strong>, <em>and</em>,
+          <u>will</u> open <del>the</del> github profile in new <b>tab</b>
+        </p>
+      </nav>
+    </header>
+    <section class="container">
+      <form
+        id="form"
+        style="border: 1px solid rgb(238, 233, 233); padding: 50px"
+      >
+        <div>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            value=""
+            placeholder="User Name"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <!-- <label for="email">Email:</label> -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value=""
+            placeholder="Email"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <!-- <label for="githubID">Github ID:</label> -->
+          <input
+            type="text"
+            id="githubID"
+            name="githubID"
+            value=""
+            placeholder="GitHub ID"
+            required
+          />
+        </div>
+        <br />
+        <br />
+        <div class="form-item" style="padding: 4px">
+          <label for="gender"><b>Gender:</b></label>
+          <input type="radio" id="male" name="gender" value="Male" required />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="Female"
+            required
+          />
+          <label for="female">Female</label>
+        </div>
+        <br />
+        <div class="form-item" style="padding: 4px">
+          <label for="country"><b>Country:</b></label>
+          <select
+            id="country"
+            name="country"
+            style="
+              padding: 5px;
+              width: 16rem;
+              border-radius: 3px;
+              border: 1px solid #ccc;
+              background-color: white;
+            "
+            required
+          >
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="Cshina">China</option>
+          </select>
+        </div>
+        <br />
+
+        <br />
+        <div style="display: flex" class="form-item">
+          <textarea
+            style="
+              padding: 10px;
+              width: 20rem;
+              height: 50px;
+              border-radius: 3px;
+              border: 1px solid #ccc;
+              background-color: white;
+            "
+            id="additionalDetailsOfUser"
+            name="additionalDetailsOfUser"
+            placeholder="Any Other Info"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            value="checkbox"
+            required
+          />
+          <label for="checkbox"
+            >I agree to share this data with Arjun Pandit</label
+          >
+        </div>
+        <br />
+        <div style="text-align: center">
+          <button onclick="submitForm()">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- users info table start-->
+    <div class="table" id="table">
+      <table id="userDataTable" style="display: none">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Country</th>
+            <th>GitHub ID</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- users table ends -->
+
+    <footer>
+      <p>&copy; 2023 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+      <ul>
+        <li style="display: inline">unordered</li>
+        <li style="display: inline">list</li>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

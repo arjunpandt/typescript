@@ -1,0 +1,10 @@
+{
+  "name": "typescript-assignmernt",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc script.ts && xdg-open index.html"
+  },
+  "devDependencies": {
+    "typescript": "5.3.3"
+  }
+}
